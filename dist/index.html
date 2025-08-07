@@ -7,6 +7,36 @@
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <main class="dashboard">
+        <search class="search-bar">
+            <input class="search-bar__input" type="search" placeholder="Search for athlete profile data, workout and meditation sessions">
+            <button class="search-bar__button"></button>
+        </search>
+        <section class="stats">
+            <article class="stat-card stat-card--concentration">
+                <h3 class="stat-card__title"></h3>
+                <p class="stat-card__status"></p>
+                <picture class="stat-card__chart">
+                    <img src="assets/charts/brain/concentration.png" alt="Concentration chart">
+                </picture>
+            </article>
+            <article class="stat-card stat-card--stress">
+                <h3 class="stat-card__title"></h3>
+                <p class="stat-card__status"></p>
+                <picture class="stat-card__chart">
+                    <img src="assets/charts/brain/stress.png" alt="Brain Stress chart">
+                </picture>
+            </article>
+            <article class="stat-card stat-card--activity">
+                <h3 class="stat-card__title"></h3>
+                <p class="stat-card__status"></p>
+                <picture class="stat-card__chart">
+                    <img src="assets/charts/brain/activity.png" alt="Brain Activity chart">
+                </picture>
+            </article>
+        </section>
+        <section class="charts"></section>
+        <section class="activities"></section>
+    </main>
 </body>
 </html>
