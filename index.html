@@ -8,34 +8,34 @@
 </head>
 <body>
     <main class="dashboard">
-        <search class="search-bar">
-            <input class="search-bar__input" type="search" placeholder="Search for athlete profile data, workout and meditation sessions">
-            <button class="search-bar__button"></button>
-        </search>
-        <section class="stats">
-            <article class="stat-card stat-card--concentration">
-                <h4 class="stat-card__title">Concentration rate</h4>
-                <h3 class="stat-card__value">Normal</h3>
-                <picture class="stat-card__chart">
+        <header class="dashboard__search">
+            <input class="dashboard__search-input" type="search" placeholder="Search for athlete profile data, workout and meditation sessions">
+            <button class="dashboard__search-button"></button>
+        </header>
+        <section class="metrics">
+            <article class="metrics__item metrics__item--concentration">
+                <h4 class="metrics__item__title">Concentration rate</h4>
+                <h3 class="metrics__item__value">Normal</h3>
+                <picture class="metrics__item__chart">
                     <img src="assets/charts/brain/concentration.png" alt="Concentration chart">
                 </picture>
             </article>
-            <article class="stat-card stat-card--stress">
-                <h4 class="stat-card__title">Brain stress rate</h4>
-                <h3 class="stat-card__value">Normal</h3>
-                <picture class="stat-card__chart">
+            <article class="metrics__item metrics__item--stress">
+                <h4 class="metrics__item__title">Brain stress rate</h4>
+                <h3 class="metrics__item__value">Normal</h3>
+                <picture class="metrics__item__chart">
                     <img src="assets/charts/brain/stress.png" alt="Brain Stress chart">
                 </picture>
             </article>
-            <article class="stat-card stat-card--activity">
-                <h4 class="stat-card__title">Brain activity</h4>
-                <picture class="stat-card__chart">
+            <article class="metrics__item metrics__item--activity">
+                <h4 class="metrics__item__title">Brain activity</h4>
+                <picture class="metrics__item__chart">
                     <img src="assets/charts/brain/activity.png" alt="Brain Activity chart">
                 </picture>
             </article>
         </section>
-        <section class="charts"></section>
-        <section class="activities"></section>
+        <section class="heart-rate"></section>
+        <section class="sessions"></section>
     </main>
 </body>
 </html>
