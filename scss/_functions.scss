@@ -1,0 +1,15 @@
+@function primary-color($shade){
+    @return map-get($primary-colors, $shade);
+}
+
+@function secondary-color($shade){
+    @return map-get($secondary-colors, $shade);
+}
+
+@function neutral-color($number){
+    @return map-get($neutral-colors, ("neutral"+$number));
+}
+
+@function status-color($status){
+    @return map-get($status-colors, $status);
+}
