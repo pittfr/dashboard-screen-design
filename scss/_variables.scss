@@ -1,0 +1,40 @@
+$primary-colors: (
+    "darkest" : #471E65,
+    "darker" : #552479,
+    "dark" : #622A8C,
+    "base" : #7030A0,
+    "light" : #9752CB,
+    "lighter" : #AE79D7,
+    "lightest" : #D2B4E8
+);
+
+$secondary-colors: (
+    "darkest": #0E426F,
+    "darker": #12548D,
+    "dark": #1666AC,
+    "base": #1A79CB,
+    "light": #5FA1DA,
+    "lighter": #A3C9EA,
+    "lightest": #E8F1F9
+);
+
+$neutral-colors: (
+    "neutral0": #FFFFFF,
+    "neutral1": #F8F9FA,
+    "neutral2": #F1F3F5,
+    "neutral3": #E9ECEF,
+    "neutral4": #DEE2E6,
+    "neutral5": #CED4DA,
+    "neutral6": #ADB5BD,
+    "neutral7": #6A7178,
+    "neutral8": #4F575E,
+    "neutral9": #272B30,
+    "neutral10": #101213
+);
+
+$status-colors: (
+    "error": #E03131,
+    "success": #2A843C,
+    "warning": #E9A100,
+    "info": #009DDE
+);
