@@ -1,0 +1,221 @@
+@import './functions';
+
+.dashboard{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 70px 150px;
+    background: secondary-color('lightest');
+
+    &__search{
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        gap: 6px;
+        width: 514px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #d4e3f0d9;
+        margin-bottom: 80px;
+
+        &-button{
+            outline: 0;
+            border: 0;
+            background: transparent;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+        }
+
+        &-input{
+            width: 100%;
+            outline: 0;
+            border: 0;
+            background: transparent;
+            font-weight: 500;
+            font-size: 14px;
+
+            &::placeholder{
+                color: #85a5c2;
+            }
+        }
+    }
+}
+
+.metrics{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 32px;
+    margin-bottom: 60px;
+
+    &__item{
+        width: 100%;
+        height: 160px;
+        border-radius: 16px;
+        padding: 24px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        &__value{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        &__chart{
+            flex: 1;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                max-width: 190px;
+            }
+        }
+
+        &--concentration{
+            background: #5fa1da;
+        }
+
+        &--stress{
+            background: #c5b5f5;
+        }
+
+        &--activity{
+            background: #eeadc4;
+        }
+    }
+}
+
+.heart-rate{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 395px);
+    gap: 30px;
+    margin-bottom: 45px;
+
+    &__item{
+        width: 100%;
+        height: 280px;
+        border-radius: 16px;
+        padding: 24px;
+        padding-bottom: 20px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+        background: neutral-color(0);
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            color: #85a5c2;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        &__value{
+            color: #59748a;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        &__chart{
+            flex: 1;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.sessions{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 395px);
+    gap: 30px;
+    margin-bottom: 70px;
+
+    &__item{
+        width: 100%;
+        height: 200px;
+        border-radius: 16px;
+        padding: 24px;
+        padding-bottom: 20px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+        background: neutral-color(0);
+
+        &__header{
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 10px;
+        }
+
+        &__title{
+            width: 100px;
+            text-align: center;
+            color: #85a5c2;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        &__status{
+            text-align: center;
+            color: #59748a;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        &__metrics{
+            width: 100%;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        &__metric{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #eef7fe;
+        }
+
+        &__value{
+            text-align: center;
+            color: #59748a;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        &__label{
+            text-align: center;
+            color: #59748a;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
