@@ -73,7 +73,11 @@
 .sidebar-menu__items > :last-child {
   margin-top: auto;
 }
-.sidebar-menu__item.active .sidebar-menu__icon {
+.sidebar-menu__item .sidebar-menu__icon {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-menu__item.active .sidebar-menu__icon, .sidebar-menu__item:hover .sidebar-menu__icon {
   background: #552479;
 }
 .sidebar-menu__link {

@@ -54,7 +54,12 @@
         }
     }
 
-    &__item.active .sidebar-menu__icon{
+    &__item .sidebar-menu__icon{
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__item.active .sidebar-menu__icon,
+    &__item:hover .sidebar-menu__icon{
         background: primary-color('darker');
     }
 
