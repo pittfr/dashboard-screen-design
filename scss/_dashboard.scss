@@ -80,7 +80,7 @@
     }
 
     &__text{
-        display: none;
+        opacity: 0;
         font-size: 14px;
         font-weight: 500;
     }
@@ -93,7 +93,8 @@
         }
 
         .sidebar-menu__logo-text, .sidebar-menu__text{
-            display: block;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
         }
 
         .sidebar-menu__item{
@@ -108,6 +109,12 @@
             align-items: center;
         }
         
+    }
+}
+
+@for $i from 1 through 5 {
+    .sidebar-menu.expanded .sidebar-menu__item:nth-child(#{$i}) .sidebar-menu__text{
+        transition-delay: ($i * 0.075s) + 0.1s;
     }
 }
 
