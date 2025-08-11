@@ -3,3 +3,27 @@
     border: 0;
     background: transparent;
 }
+
+@mixin media-mobile {
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl-desktop {
+    @media screen and (min-width: 1920px) {
+        @content;
+    }
+}
