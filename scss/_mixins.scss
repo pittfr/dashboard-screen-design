@@ -22,6 +22,12 @@
     }
 }
 
+@mixin media-large-desktop {
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        @content;
+    }
+}
+
 @mixin media-xl-desktop {
     @media screen and (min-width: 1920px) {
         @content;
