@@ -2,9 +2,20 @@
 @import './variables';
 @import './functions';
 @import './mixins';
+@import './panel-elements';
 @import './dashboard';
 
 
 body{
     color: neutral-color(0);
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #b3b3b3 #f5f5f5;
 }
