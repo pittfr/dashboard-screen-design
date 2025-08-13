@@ -23,7 +23,7 @@
 }
 
 @mixin media-large-desktop {
-    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+    @media screen and (min-width: 1440px) {
         @content;
     }
 }
@@ -31,5 +31,53 @@
 @mixin media-xl-desktop {
     @media screen and (min-width: 1920px) {
         @content;
+    }
+}
+
+@mixin font-size-xs {
+    font-size: $font-size-xs;
+
+    @include media-large-desktop{
+        font-size: $font-size-xs + 2px;
+    }
+
+    @include media-xl-desktop{
+        font-size: $font-size-xs + 4px;
+    }
+}
+
+@mixin font-size-sm {
+    font-size: $font-size-sm;
+
+    @include media-large-desktop{
+        font-size: $font-size-sm + 2px;
+    }
+
+    @include media-xl-desktop{
+        font-size: $font-size-sm + 4px;
+    }
+}
+
+@mixin font-size-md {
+    font-size: $font-size-md;
+
+    @include media-large-desktop{
+        font-size: $font-size-md + 2px;
+    }
+
+    @include media-xl-desktop{
+        font-size: $font-size-md + 4px;
+    }
+}
+
+@mixin font-size-lg {
+    font-size: $font-size-lg;
+
+    @include media-large-desktop{
+        font-size: $font-size-lg + 2px;
+    }
+
+    @include media-xl-desktop{
+        font-size: $font-size-lg + 4px;
     }
 }
