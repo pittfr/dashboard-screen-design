@@ -7,6 +7,87 @@
   margin: 0;
 }
 
+@-webkit-keyframes flipY-hide {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: block;
+  }
+  51% {
+    display: none;
+  }
+  100% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+}
+
+@keyframes flipY-hide {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: block;
+  }
+  51% {
+    display: none;
+  }
+  100% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+}
+@-webkit-keyframes flipY-show {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+  49% {
+    display: none;
+  }
+  50% {
+    display: block;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
+  }
+}
+@keyframes flipY-show {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+  49% {
+    display: none;
+  }
+  50% {
+    display: block;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
+  }
+}
 .sidebar-menu {
   display: grid;
   grid-template-rows: 30px 1fr;
@@ -709,6 +790,46 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   }
   .sidebar-info__events-item {
     max-width: 300px;
+  }
+}
+@keyframes flipY-hide {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: block;
+  }
+  51% {
+    display: none;
+  }
+  100% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+}
+@keyframes flipY-show {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    display: none;
+  }
+  49% {
+    display: none;
+  }
+  50% {
+    display: block;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    display: block;
   }
 }
 .dashboard {
