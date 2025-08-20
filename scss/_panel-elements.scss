@@ -195,8 +195,8 @@ body.menu-expanded .sidebar-menu {
         position: fixed;
         right: 54px;
         bottom: 54px;
-        width: 56px;
-        height: 56px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background: primary-color('light');
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -205,8 +205,8 @@ body.menu-expanded .sidebar-menu {
         justify-content: center;
         cursor: pointer;
         svg {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             fill: neutral-color(1);
             display: block;
         }
@@ -477,6 +477,7 @@ body.menu-expanded .sidebar-menu {
             line-height: 21px;
             font-weight: 700;
             margin-bottom: 14px;
+            white-space: nowrap;
         }
 
         &-time, &-coach{
@@ -484,6 +485,7 @@ body.menu-expanded .sidebar-menu {
             line-height: 21px;
             font-weight: 500;
             margin-bottom: 4px;
+            white-space: nowrap;
         }
 
         &-arrow-button{
@@ -619,11 +621,32 @@ body.info-expanded .container {
     }
 
     .sidebar-info{
+        width: 100%;
+        top: 70px;
+
+        &__container{
+            padding: 35px 25px;
+            overflow-x: hidden;
+        }
+
         &__toggle{
             display: none;
         }
+        
         &__toggle-fab {
             display: flex;
+        }
+
+        &__calendar{
+            width: 90vw;
+        }
+
+        &__events{
+            align-items: center;
+
+            &-item{
+                max-width: 300px;
+            }
         }
     }
 

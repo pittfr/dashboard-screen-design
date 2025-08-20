@@ -475,6 +475,7 @@
 
 @include media-mobile{
     .dashboard{
+        width: 100%;
         border-radius: 0;
         &__content{
             width: 100%;
