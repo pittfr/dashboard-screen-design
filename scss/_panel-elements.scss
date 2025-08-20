@@ -568,7 +568,7 @@ body.info-expanded .container {
             position: absolute;
             flex-direction: row-reverse;
             padding: 20px;
-            height: 70px;
+            height: $sidebar-menu-height-mobile;
             background: primary-color('base');
             z-index: 1;
         }
@@ -622,7 +622,7 @@ body.info-expanded .container {
 
     .sidebar-info{
         width: 100%;
-        top: 70px;
+        top: $sidebar-menu-height-mobile;
 
         &__container{
             padding: 35px 25px;
