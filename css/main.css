@@ -615,6 +615,81 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
     position: fixed;
   }
 }
+@media screen and (max-width: 599px) {
+  .sidebar-menu {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    border-radius: 0;
+    padding: 0;
+    background: unset;
+    overflow: hidden;
+    -webkit-transition: unset;
+    transition: unset;
+    pointer-events: none;
+  }
+  .sidebar-menu__header {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 20px;
+    height: 70px;
+    background: #7030A0;
+    z-index: 1;
+  }
+  .sidebar-menu__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    visibility: hidden;
+  }
+  .sidebar-menu__items {
+    height: 100dvh;
+    padding: 150px 0 100px 0;
+    background: #7030A0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .sidebar-menu__logo-text {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .sidebar-menu__toggle {
+    display: none;
+  }
+  .sidebar-menu__burger-label, .sidebar-menu__burger {
+    display: block;
+  }
+  body.menu-expanded .sidebar-menu {
+    width: 100vw;
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__nav {
+    visibility: visible;
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__items {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__item {
+    width: 150px;
+  }
+  .sidebar-info__toggle {
+    display: none;
+  }
+  .sidebar-info__toggle-fab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .dashboard {
   width: calc(100vw - var(--sidebar-info-width));
   height: 100dvh;
@@ -666,6 +741,9 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   background: transparent;
   font-weight: 500;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1440px) {
   .dashboard__search-input {
@@ -1127,8 +1205,75 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   }
 }
 @media screen and (max-width: 715px) {
+  .dashboard__search {
+    width: 90%;
+  }
+  .dashboard__search-input {
+    font-size: 12px;
+  }
   .dashboard .metrics {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 599px) {
+  .dashboard {
+    border-radius: 0;
+  }
+  .dashboard__content {
+    width: 100%;
+    padding: 100px 50px 50px 50px;
+  }
+  .dashboard__search {
+    width: 100%;
+  }
+  .dashboard .metrics {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dashboard .metrics__item {
+    max-width: 400px;
+  }
+  .dashboard .metrics__item:nth-child(3) .metrics__item__chart img {
+    width: 30%;
+  }
+  .dashboard .heart-rate {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .dashboard .heart-rate__item {
+    max-width: 500px;
+    aspect-ratio: unset;
+  }
+  .dashboard .sessions {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .dashboard .sessions__item {
+    max-width: 500px;
+  }
+  .dashboard .sessions__item__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .dashboard .sessions__item__title {
+    width: 100%;
+  }
+  .dashboard .sessions__item__status {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dashboard .sessions__item {
+    aspect-ratio: unset;
+    gap: 20px;
+  }
+  .dashboard .sessions__item__metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
   }
 }
 body {
