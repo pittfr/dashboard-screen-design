@@ -666,6 +666,9 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   background: transparent;
   font-weight: 500;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1440px) {
   .dashboard__search-input {
@@ -1127,8 +1130,75 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   }
 }
 @media screen and (max-width: 715px) {
+  .dashboard__search {
+    width: 90%;
+  }
+  .dashboard__search-input {
+    font-size: 12px;
+  }
   .dashboard .metrics {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 599px) {
+  .dashboard {
+    border-radius: 0;
+  }
+  .dashboard__content {
+    width: 100%;
+    padding: 100px 50px 50px 50px;
+  }
+  .dashboard__search {
+    width: 100%;
+  }
+  .dashboard .metrics {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dashboard .metrics__item {
+    max-width: 400px;
+  }
+  .dashboard .metrics__item:nth-child(3) .metrics__item__chart img {
+    width: 30%;
+  }
+  .dashboard .heart-rate {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .dashboard .heart-rate__item {
+    max-width: 500px;
+    aspect-ratio: unset;
+  }
+  .dashboard .sessions {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .dashboard .sessions__item {
+    max-width: 500px;
+  }
+  .dashboard .sessions__item__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .dashboard .sessions__item__title {
+    width: 100%;
+  }
+  .dashboard .sessions__item__status {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dashboard .sessions__item {
+    aspect-ratio: unset;
+    gap: 20px;
+  }
+  .dashboard .sessions__item__metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
   }
 }
 body {
