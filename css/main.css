@@ -615,6 +615,81 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
     position: fixed;
   }
 }
+@media screen and (max-width: 599px) {
+  .sidebar-menu {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    border-radius: 0;
+    padding: 0;
+    background: unset;
+    overflow: hidden;
+    -webkit-transition: unset;
+    transition: unset;
+    pointer-events: none;
+  }
+  .sidebar-menu__header {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 20px;
+    height: 70px;
+    background: #7030A0;
+    z-index: 1;
+  }
+  .sidebar-menu__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    visibility: hidden;
+  }
+  .sidebar-menu__items {
+    height: 100dvh;
+    padding: 150px 0 100px 0;
+    background: #7030A0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .sidebar-menu__logo-text {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .sidebar-menu__toggle {
+    display: none;
+  }
+  .sidebar-menu__burger-label, .sidebar-menu__burger {
+    display: block;
+  }
+  body.menu-expanded .sidebar-menu {
+    width: 100vw;
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__nav {
+    visibility: visible;
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__items {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__item {
+    width: 150px;
+  }
+  .sidebar-info__toggle {
+    display: none;
+  }
+  .sidebar-info__toggle-fab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .dashboard {
   width: calc(100vw - var(--sidebar-info-width));
   height: 100dvh;
