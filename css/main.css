@@ -705,6 +705,7 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
     display: block;
     position: fixed;
     width: 100vw;
+    height: 70px;
     border-radius: 0;
     padding: 0;
     background: unset;
@@ -755,6 +756,7 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
   }
   body.menu-expanded .sidebar-menu {
     width: 100vw;
+    height: 100dvh;
   }
   body.menu-expanded .sidebar-menu .sidebar-menu__nav {
     visibility: visible;
