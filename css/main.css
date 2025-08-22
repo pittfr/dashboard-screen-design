@@ -141,6 +141,7 @@
 .sidebar-menu__burger-label {
   font-size: 16px;
   display: none;
+  cursor: pointer;
 }
 @media screen and (min-width: 1440px) {
   .sidebar-menu__burger-label {
@@ -709,7 +710,6 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
     overflow: hidden;
     -webkit-transition: unset;
     transition: unset;
-    pointer-events: none;
   }
   .sidebar-menu__header {
     position: absolute;
@@ -728,6 +728,7 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
     left: 0;
     width: 100vw;
     visibility: hidden;
+    pointer-events: none;
   }
   .sidebar-menu__items {
     height: 100dvh;
