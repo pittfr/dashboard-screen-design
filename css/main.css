@@ -327,6 +327,7 @@ body.menu-expanded .sidebar-menu .sidebar-menu__item:nth-child(5) .sidebar-menu_
           box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.05);
   background: #FFFFFF;
   z-index: 1;
+  cursor: pointer;
 }
 .sidebar-info__toggle-button {
   outline: 0;
