@@ -531,6 +531,17 @@ body.info-expanded .container {
     }
 }
 
+@include media-xl-desktop{
+    body.menu-expanded .sidebar-menu{
+        width: 300px;
+
+        .sidebar-menu__item{
+            width: 70%;
+            padding: unset;
+        }
+    }
+}
+
 @include media-desktop{
     body.menu-expanded .page-overlay{
         pointer-events: auto;

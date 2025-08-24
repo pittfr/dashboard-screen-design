@@ -681,6 +681,15 @@ body.info-expanded .container > .sidebar-info .sidebar-info__toggle-button {
           transform: rotate(0);
 }
 
+@media screen and (min-width: 1920px) {
+  body.menu-expanded .sidebar-menu {
+    width: 300px;
+  }
+  body.menu-expanded .sidebar-menu .sidebar-menu__item {
+    width: 70%;
+    padding: unset;
+  }
+}
 @media screen and (min-width: 1024px) {
   body.menu-expanded .page-overlay {
     pointer-events: auto;
