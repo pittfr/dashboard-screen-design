@@ -221,6 +221,9 @@ body.menu-expanded .sidebar-menu .sidebar-menu__toggle {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
+body.menu-expanded .sidebar-menu .sidebar-menu__logo-text {
+  display: block;
+}
 body.menu-expanded .sidebar-menu .sidebar-menu__logo-text, body.menu-expanded .sidebar-menu .sidebar-menu__text {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;

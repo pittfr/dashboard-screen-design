@@ -108,6 +108,10 @@ body.menu-expanded .sidebar-menu {
         transform: rotate(-180deg);
     }
 
+    .sidebar-menu__logo-text{
+        display: block;
+    }
+
     .sidebar-menu__logo-text, .sidebar-menu__text{
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
